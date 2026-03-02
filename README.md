@@ -15,6 +15,7 @@ To run this code, you need [Julia](https://julialang.org/) installed along with 
 You can install these packages in the Julia REPL by typing `]` to enter the Pkg prompt and running:
 ```julia
 pkg> add JuMP Ipopt LinearAlgebra Zygote
+```
 
 ## 📂 Repository Structure
 entropy_optimization.jl: The core function new_entropy_optimize(C, W; lambda) that performs the entropy minimization using IPOPT.
