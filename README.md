@@ -1,6 +1,6 @@
 # Entropy-Based Post-Processing for Robust Muscle Synergy Extraction
 
-This repository contains the Julia implementation and a sample anonymized electromyography (EMG) dataset for the paper: **"Entropy-Based Post-Processing for Robust Muscle Synergy Extraction via NMF"** (Submitted to IEEE TNSRE).
+This repository contains the Julia implementation and a sample anonymized electromyography (EMG) dataset for the paper: **Entropy-Based Post-Processing for Robust Muscle Synergy Extraction: Selecting a Canonical Representative from NMF Solutions**.
 
 ## Overview
 Non-negative Matrix Factorization (NMF) is widely used for muscle synergy extraction, but it suffers from rotational ambiguity, leading to non-unique solutions. This repository provides a post-processing optimization framework that selects a stable, canonical representative synergy set from the feasible equivalence class by minimizing the Shannon entropy of the spatial synergy vectors. 
