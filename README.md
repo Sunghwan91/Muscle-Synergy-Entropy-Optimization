@@ -2,10 +2,10 @@
 
 This repository contains the Julia implementation and a sample anonymized electromyography (EMG) dataset for the paper: **"Entropy-Based Post-Processing for Robust Muscle Synergy Extraction via NMF"** (Submitted to IEEE TNSRE).
 
-## 📌 Overview
+## Overview
 Non-negative Matrix Factorization (NMF) is widely used for muscle synergy extraction, but it suffers from rotational ambiguity, leading to non-unique solutions. This repository provides a post-processing optimization framework that selects a stable, canonical representative synergy set from the feasible equivalence class by minimizing the Shannon entropy of the spatial synergy vectors. 
 
-## ⚙️ Prerequisites
+## Prerequisites
 To run this code, you need [Julia](https://julialang.org/) installed along with the following packages:
 - `JuMP` (Optimization modeling framework)
 - `Ipopt` (Nonlinear optimization solver)
@@ -17,12 +17,12 @@ You can install these packages in the Julia REPL by typing `]` to enter the Pkg 
 pkg> add JuMP Ipopt LinearAlgebra Zygote
 ```
 
-## 📂 Repository Structure
+## Repository Structure
 entropy_optimization.jl: The core function new_entropy_optimize(C, W; lambda) that performs the entropy minimization using IPOPT.
 
 sample_data/: Contains an anonymized sample gait EMG dataset (Temporal activations C and spatial synergies W derived from initial NMF).
 
-## 🚀 How to Use
+## How to Use
 Clone the repository or download the files.
 
 Open your Julia REPL and include the script.
